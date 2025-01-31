@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - John Doe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.5;
+            color: #1a1a1a;
+            background: #fff;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #666;
+            flex-wrap: wrap;
+        }
+
+        .section-content {
+            font-size: 0.875rem;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-title {
+            font-weight: 500;
+        }
+
+        .item-company, .item-school {
+            color: #2563eb;
+        }
+
+        .item-period {
+            color: #666;
+        }
+
+        .item-description {
+            color: #666;
+        }
+
+        .language-item {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .language-name {
+            font-weight: 500;
+        }
+
+        .project-item {
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            color: #2563eb;
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+        }
+
+        .links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .links a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>John Doe</h1>
+            <p class="job-title">Full Stack Developer</p>
+            <div class="contact-info">
+                <span>📧 john@example.com</span>
+                <span>📱 (123) 456-7890</span>
+                <span>📍 San Francisco, CA</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section>
+            <h2>About</h2>
+            <p class="section-content">
+                I am a passionate Full Stack Developer with over 5 years of experience building web applications.
+                I specialize in React, Node.js, and modern web technologies. My goal is to create elegant,
+                efficient, and user-friendly solutions that solve real-world problems.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section>
+            <h2>Experience</h2>
+            <div class="section-content">
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Senior Full Stack Developer</div>
+                            <div class="item-company">Tech Corp</div>
+                        </div>
+                        <div class="item-period">2020 - Present</div>
+                    </div>
+                    <p class="item-description">Led development of multiple web applications using React and Node.js</p>
+                </div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Full Stack Developer</div>
+                            <div class="item-company">Digital Solutions Inc</div>
+                        </div>
+                        <div class="item-period">2018 - 2020</div>
+                    </div>
+                    <p class="item-description">Developed and maintained various client projects</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <div class="section-content">
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Master of Computer Science</div>
+                            <div class="item-school">University of Technology</div>
+                        </div>
+                        <div class="item-period">2016 - 2018</div>
+                    </div>
+                    <p class="item-description">Specialized in Software Engineering and Distributed Systems</p>
+                </div>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Bachelor of Computer Science</div>
+                            <div class="item-school">State University</div>
+                        </div>
+                        <div class="item-period">2012 - 2016</div>
+                    </div>
+                    <p class="item-description">Major in Computer Science with focus on Web Technologies</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Language Section -->
+        <section>
+            <h2>Languages</h2>
+            <div class="section-content">
+                <div class="language-item">
+                    <span class="language-name">English</span>
+                    <span class="item-description">- Professional working proficiency</span>
+                </div>
+                <div class="language-item">
+                    <span class="language-name">Turkish</span>
+                    <span class="item-description">- Native</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2>Projects</h2>
+            <div class="section-content">
+                <div class="project-item">
+                    <div class="item-title">E-commerce Platform</div>
+                    <p class="item-description">Full-stack e-commerce solution with React and Node.js</p>
+                    <p class="project-tech">React • Node.js • PostgreSQL</p>
+                </div>
+                <div class="project-item">
+                    <div class="item-title">Task Management App</div>
+                    <p class="item-description">Real-time task management application</p>
+                    <p class="project-tech">Next.js • Express • MongoDB</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links Section -->
+        <section>
+            <h2>Links</h2>
+            <div class="links">
+                <a href="https://github.com">GitHub</a>
+                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="https://portfolio.com">Portfolio</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
